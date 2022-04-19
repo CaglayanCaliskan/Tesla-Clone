@@ -5,8 +5,8 @@ const Navbar = ({handleMenu}) => {
   const [lightConfig, setLightConfig] = useState({});
   const [lightDisplay, setLightDisplay] = useState(false);
 
-  const handleLightDisplay = () => {
-    setLightDisplay(!lightDisplay);
+  const handleLightDisplay = (e) => {
+    setLightConfig(false);
   };
 
   const handleHighLight = (e) => {
@@ -15,6 +15,7 @@ const Navbar = ({handleMenu}) => {
       e.target.parentNode.classList[1] !== 'left'
     ) {
       setLightConfig(e.target.getBoundingClientRect());
+      setLightDisplay(true);
     }
   };
 
