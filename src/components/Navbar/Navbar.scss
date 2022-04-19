@@ -1,0 +1,60 @@
+@import '../../styles/settings/_settings';
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .navbar-in {
+    width: 100%;
+    position: absolute;
+    height: 56px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    color: $nav-logo-color;
+    font-weight: 600;
+
+    a {
+      margin: 0 8px;
+      padding: 4px 8px;
+      user-select: none;
+    }
+    .nav-options {
+      padding: 0 8px;
+    }
+
+    .nav-options.left {
+      padding-left: 32px;
+      padding-top: 2px;
+      .logo svg {
+        width: 120px;
+      }
+    }
+    .nav-options.center {
+      flex: 1;
+      text-align: center;
+      margin-left: 10px;
+      a {
+        margin-right: 10px;
+      }
+    }
+    .nav-options.right {
+      padding-right: 20px;
+      text-align: end;
+    }
+  }
+  #menuBtn {
+    padding: 4px 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+.highlighter {
+  position: absolute;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  transition: all 0.3s ease-in;
+  border-radius: 99px;
+  z-index: -3;
+  cursor: pointer;
+}

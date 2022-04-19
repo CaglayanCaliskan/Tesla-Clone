@@ -1,0 +1,20 @@
+footer {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .footer-in {
+    position: absolute;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 80px;
+    li {
+      margin: 0px 10px;
+      cursor: pointer;
+    }
+  }
+}

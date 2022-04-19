@@ -1,0 +1,50 @@
+@import '../../styles/settings/_settings';
+
+.main {
+  color: white;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  color: $color-hero-text;
+  transition: filter 0.3s ease;
+  scroll-behavior: smooth;
+
+  .section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+  }
+}
+.section:nth-child(1) {
+  background-image: url('../../assets/M3-Homepage-Desktop-LHD.jpg');
+}
+.section:nth-child(2) {
+  background-image: url('../../assets/Desktop-ModelY.jpg');
+}
+.section:nth-child(3) {
+  background-image: url('../../assets/MS-Homepage-Desktop-LHD.jpg');
+}
+.section:nth-child(4) {
+  background-image: url('../../assets/MX-Homepage-Desktop-LHD.jpg');
+}
+.section:nth-child(5) {
+  background-image: url('../../assets/_25-HP-SolarPanels-D.jpg');
+}
+.section:nth-child(6) {
+  background-image: url('../../assets/HP-SR-Design-D.jpg');
+}
+.section:nth-child(7) {
+  background-image: url('../../assets/Desktop-Accessories.jpg');
+}
+
+.main.active {
+  filter: blur(5px);
+}

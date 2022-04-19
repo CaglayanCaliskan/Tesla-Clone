@@ -1,0 +1,30 @@
+@import '../../styles/settings/_settings';
+
+.buttons {
+  margin: auto;
+  margin-top: 60vh;
+  width: 552px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 264px;
+    border: none;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:nth-child(1) {
+    color: #fff;
+    background-color: $color-hero-text-alp;
+    margin-right: 10px;
+  }
+  button:nth-child(2) {
+    color: $color-hero-text-alp;
+    background-color: #fff;
+    margin-left: 10px;
+  }
+}
