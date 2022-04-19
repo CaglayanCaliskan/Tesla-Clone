@@ -3,11 +3,11 @@ import './Navbar.scss';
 
 const Navbar = ({handleMenu}) => {
   const [lightConfig, setLightConfig] = useState({});
-  // const [lightDisplay, setLightDisplay] = useState(false);
+  const [lightDisplay, setLightDisplay] = useState(false);
 
-  // const handleLightDisplay = () => {
-  //   setLightDisplay(true);
-  // };
+  const handleLightDisplay = () => {
+    setLightDisplay(!lightDisplay);
+  };
 
   const handleHighLight = (e) => {
     if (
@@ -20,10 +20,16 @@ const Navbar = ({handleMenu}) => {
 
   return (
     <header className='navbar'>
-      <div className='navbar-in' onMouseMove={handleHighLight}>
+      <div
+        className='navbar-in'
+        onMouseEnter={handleLightDisplay}
+        onMouseLeave={handleLightDisplay}
+        onMouseMove={handleHighLight}
+      >
         <div
           className='highlighter'
           style={{
+            display: `${lightDisplay ? 'block' : 'none'}`,
             width: lightConfig.width,
             height: lightConfig.height,
             left: lightConfig.x,
