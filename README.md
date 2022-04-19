@@ -1,3 +1,24 @@
+## Used Technologies
+
+- React Js
+- Sass
+
+
+## Live Demo
+with response design
+_[Live Demo>>>](https://tesla-clone-caglayan.netlify.app)_
+
+
+
+
+
+
+
+
+## Getting Started
+
+First, run the development server:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
